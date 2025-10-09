@@ -1,0 +1,145 @@
+
+.footer {
+  background: linear-gradient(135deg, #36aab9, #14565E);
+  color: white;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 15px;
+background: linear-gradient(90deg, #facc15, #f97316, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for modern browsers */
+}
+
+/* highlight color */
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffeb3b;
+}
+
+ /* Social icons  */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer bottom  */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+}
+
+/* Bottom Animation */
+.footer-animation {
+  position: relative;
+  height: 120px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+  left: -200px;
+  width: 150px;
+  animation: moveCar 10s linear infinite;
+}
+
+.cycle {
+  position: absolute;
+  bottom: 0;
+  left: -150px;
+  width: 200px;
+  animation: moveCycle 12s linear infinite;
+ 
+}
+
+@keyframes moveCar {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes moveCycle {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    margin-bottom: 20px;
+  }
+
+  .subscribe {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

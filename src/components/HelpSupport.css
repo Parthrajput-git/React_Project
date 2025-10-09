@@ -1,0 +1,136 @@
+.help-supportpage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  /* background: linear-gradient(135deg, whitesmoke, grey); */
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.helplogo {
+  height: 250px;
+  width: 250px;
+  margin-top: -15px;
+}
+
+.helptitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: -200px;
+  margin-left: 150px;
+  color: #1e3a8a; /* deep blue */
+}
+
+.help-supportpage h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  margin-left: 170px;
+  color: #475569; /* slate gray */
+}
+
+.help-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 80px;
+}
+
+.helpname-row {
+  display: flex;
+  gap: 15px;
+}
+
+.helpform-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.help-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1f2937; /* dark gray */
+  font-size: 1.3rem;
+  margin-inline-end: auto;
+}
+
+.help-form input,
+.help-form select,
+.help-form textarea {
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.help-form select option {
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.help-form input:focus,
+.help-form select:focus,
+.help-form textarea:focus {
+  border-color: #3b82f6; /* blue */
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.4);
+  background: #fff;
+}
+
+.help-form textarea {
+  resize: none;
+}
+
+.help-form input[type="file"] {
+  padding: 8px;
+  background: #fff;
+  font-size: 0.95rem;
+  border: 1px dashed #94a3b8;
+  cursor: pointer;
+}
+
+.helpsubmit-btn {
+  padding: 14px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.helpsubmit-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #172554);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 768px) {
+  .helpname-row {
+    flex-direction: column;
+  }
+
+  .help-supportpage {
+    padding: 20px;
+  }
+
+  .help-supportpage .title {
+    font-size: 1.8rem;
+    margin-left: 0;
+    margin-top: -50px;
+  }
+
+  .help-supportpage h4 {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,440 @@
+/* ----------------- Global ----------------- */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+/* ----------------- Cube Slider ----------------- */
+.cube-slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    perspective: 1500px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    margin-bottom: 120px;
+    margin-top: -7em;
+}
+/* Cube Slider main rotating div */
+.cube-slider .slider {
+  transition: transform 1s ease-in-out; /* smooth rotation */
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 300px; /* apke card size ke according adjust */
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+.slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  margin: -100px 0 0 -150px; /* half of card height and width */
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-btn.prev {
+  left: 20px;
+}
+
+.nav-btn.next {
+  right: 20px;
+}
+
+/* ----------------- Header ----------------- */
+.team-header {
+  position: relative;
+  width: 100vw;          /* viewport width full */
+  max-width: 100%;       /* ensure no parent restriction */
+  margin: 0;             /* remove any default margin */
+  padding: 80px 20px 50px;
+  background: linear-gradient(135deg, #36aab9, #14565e);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  left: 0;               /* ensure full width from left edge */
+}
+
+.team-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.team-header p {
+  font-size: 18px;
+  color: #e0f7fa;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Background shapes */
+.team-header .bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  background: #fff;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.team-header .s1 { width: 120px; height: 120px; top: 10%; left: 5%; }
+.team-header .s2 { width: 200px; height: 200px; top: 20%; right: 10%; }
+.team-header .s3 { width: 100px; height: 100px; bottom: 15%; left: 20%; }
+.team-header .s4 { width: 150px; height: 150px; bottom: 10%; right: 25%; }
+
+
+/* ----------------- Mission Section ----------------- */
+.team-mission {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f5f6fa;
+}
+
+.team-mission h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #14565e;
+  position: relative;
+  display: inline-block;
+}
+
+.team-mission h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #36aab9;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.team-mission p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ----------------- Footer ----------------- */
+.team-footer {
+  text-align: center;
+  padding: 80px 20px; /* Increased padding */
+  background: linear-gradient(135deg, #14565e, #36aab9);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 -5px 30px rgba(0,0,0,0.3);
+  width: 100%;
+}
+
+.team-footer::before {
+  content: '';
+  position: absolute;
+  width: 250%;
+  height: 150%;
+  top: -60%;
+  left: -75%;
+  background: rgba(255, 255, 255, 0.05);
+  transform: rotate(25deg);
+  animation: float 12s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: rotate(25deg) translateY(0); }
+  50% { transform: rotate(25deg) translateY(15px); }
+}
+
+.team-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.team-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.team-footer .social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.team-footer .social-icons a:hover {
+  background: #fff;
+  color: #14565e;
+  transform: translateY(-7px) scale(1.2);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  filter: drop-shadow(0 0 6px #ffd700);
+}
+
+.team-footer p {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.team-footer p a {
+  color: #ffd700;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.team-footer p a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #ffd700;
+}
+
+/* ----------------- Responsive ----------------- */
+@media (max-width: 1200px) {
+  .card { width: 250px; height: 300px; }
+  .slide { margin: -90px 0 0 -125px; }
+}
+
+@media (max-width: 992px) {
+  .cube-slider { height: 400px; margin-bottom: 90px; }
+  .card { width: 200px; height: 280px; }
+  .slide { margin: -75px 0 0 -100px; }
+}
+
+@media (max-width: 768px) {
+  .cube-slider { height: 350px; margin-bottom: 70px; }
+  .card { width: 180px; height: 250px; }
+  .slide { margin: -70px 0 0 -90px; }
+  .team-footer { padding: 60px 15px; border-top-left-radius: 40px; border-top-right-radius: 40px; }
+  .team-footer .social-icons a { width: 45px; height: 45px; font-size: 18px; }
+  .team-footer p { font-size: 14px; }
+}
+
+@media (max-width: 576px) {
+  .cube-slider { height: 300px; margin-bottom: 50px; }
+  .card { width: 150px; height: 220px; padding: 15px; }
+  .slide { margin: -60px 0 0 -75px; }
+  .card img { height: 60px; }
+  .card h3 { font-size: 14px; }
+  .card p { font-size: 12px; }
+  .team-footer { padding: 50px 10px; }
+  .team-footer .social-icons { gap: 10px; }
+  .team-footer .social-icons a { width: 38px; height: 38px; font-size: 16px; }
+  .team-footer p { font-size: 13px; }
+}
+
+/* // 
+broken footer animation 
+*/
+
+/* Footer base */
+.team-footer {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #14565e, #36aab9);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  box-shadow: 0 -5px 30px rgba(0,0,0,0.3);
+  cursor: pointer; /* indicates clickable */
+}
+
+/* Footer shards */
+.team-footer .shard {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  z-index: 0;
+  transition: transform 0.8s ease-in;
+}
+
+/* Generate multiple shards (5 shards in this example) */
+.team-footer .shard:nth-child(1) { left: 0%; }
+.team-footer .shard:nth-child(2) { left: 20%; }
+.team-footer .shard:nth-child(3) { left: 40%; }
+.team-footer .shard:nth-child(4) { left: 60%; }
+.team-footer .shard:nth-child(5) { left: 80%; }
+
+/* Animate shards on click */
+.team-footer.break .shard {
+  transform: translateY(300px) rotate(15deg) scaleY(0.8);
+  opacity: 0.7;
+}
+
+/* Footer content remains on top */
+.team-footer .footer-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+
+/* ?? 
+lightning effect on footer
+*/
+
+/* Footer base */
+.team-footer {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #14565e, #36aab9);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  box-shadow: 0 -5px 30px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* Footer shards */
+.team-footer .shard {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  z-index: 0;
+  transition: transform 0.8s ease-in, box-shadow 0.2s ease-in;
+}
+
+/* Multiple shards */
+.team-footer .shard:nth-child(1) { left: 0%; }
+.team-footer .shard:nth-child(2) { left: 20%; }
+.team-footer .shard:nth-child(3) { left: 40%; }
+.team-footer .shard:nth-child(4) { left: 60%; }
+.team-footer .shard:nth-child(5) { left: 80%; }
+
+/* Shards animation */
+.team-footer.break .shard {
+  transform: translateY(300px) rotate(15deg) scaleY(0.8);
+  opacity: 0.7;
+  box-shadow: 0 0 30px #fff; /* glow effect */
+}
+
+/* Footer content stays on top */
+.team-footer .footer-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Lightning flash overlay */
+.team-footer .lightning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 15;
+  transition: opacity 0.1s ease;
+}
+.team-footer.flash .lightning {
+  opacity: 1;
+}

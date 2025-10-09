@@ -1,0 +1,207 @@
+/* ===============================
+   Global About Section Styling
+================================= */
+.about-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f9fafb, #eef2f7);
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* ===============================
+   Header Section
+================================= */
+.about-header-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.about-highlight {
+  color: #2563eb;
+  background: linear-gradient(90deg, #facc15, #f97316, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+/* ===============================
+   Content Section
+================================= */
+.about-content-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Left Text */
+.about-text-content {
+  flex: 1;
+  min-width: 320px;
+  max-width: 800px;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1f2937;
+  border-left: 5px solid #2563eb;
+  padding-left: 12px;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* ===============================
+   Right Images Section
+================================= */
+.about-images-section {
+  margin-top: 50px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.05);
+}
+
+.extra-image {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.extra-image:hover {
+  transform: translateY(-8px);
+}
+
+/* ===============================
+   Team Member Section
+================================= */
+.about-content-section>div:last-child {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  /* ✅ Center align cards */
+  margin-top: 40px;
+}
+
+/* ===============================
+   Responsive Design
+================================= */
+/* ===============================
+   Responsive Design Fix
+================================= */
+@media (max-width: 992px) {
+  .about-content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text-content {
+    max-width: 100%;
+  }
+
+  .about-images-section {
+    max-width: 100%;
+    margin-top: 20px;
+    /* ✅ Add gap so content & images alag ho */
+  }
+}
+
+@media (max-width: 500px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .about-images-section {
+    width: 100%;
+    /* ✅ Force full width on small screens */
+    margin: 20px auto;
+    /* ✅ Center it with margin */
+  }
+
+  .main-image,
+  .extra-image {
+    width: 100%;
+    /* ✅ Image shrink hoke container me fit ho */
+    height: auto;
+  }
+}
+
+/* ===============================
+   Extra Small Devices (≤350px)
+================================= */
+@media (max-width: 350px) {
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .about-text-content {
+    min-width: 100%;
+    padding: 0 8px;
+    /* ✅ Thoda padding andar */
+  }
+
+  .about-images-section {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .main-image,
+  .extra-image {
+    width: 100%;
+    border-radius: 10px;
+    /* ✅ Thoda chhota round for small screens */
+  }
+}

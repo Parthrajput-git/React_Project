@@ -1,0 +1,51 @@
+.notfound-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notfound-box {
+  text-align: center;
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.notfound-box h1 {
+  font-size: 6rem;
+  background: linear-gradient(135deg, #36aab9, #14565E);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.notfound-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.notfound-box p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.back-btn {
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(135deg, #36aab9, #14565E);
+
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #36aab9, #14565E);
+
+}

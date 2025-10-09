@@ -1,0 +1,296 @@
+.laptop-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.laptop-container:hover {
+  transform: translateY(-5px);
+}
+
+.laptop-image img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.laptop-details {
+  flex: 1;
+}
+
+.laptop-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.laptop-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.rating-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.rating {
+  color: #f39c12;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, transform 0.15s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Button styles */
+.cart {
+  background: #3498db;
+  color: white;
+}
+
+.cart:hover {
+  background: #2980b9;
+}
+
+.wishlist {
+  background: #e74c3c;
+  color: white;
+}
+
+.wishlist:hover {
+  background: #c0392b;
+}
+
+.buy {
+  background: #27ae60;
+  color: white;
+}
+
+.buy:hover {
+  background: #1e8449;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .laptop-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rating-price {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .laptop-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.cart-quantity-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-quantity-wrapper button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #36aab9;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cart-quantity-wrapper button:hover {
+  background: #14565E;
+}
+
+.cart-quantity-wrapper span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  min-width: 25px;
+  text-align: center;
+}
+
+.btn.remove {
+  background: #ff4d4d;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.btn.remove:hover {
+  background: #cc0000;
+}
+
+.laptop-container {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.laptop-image img {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f4f4f4;
+  padding: 5px;
+}
+
+.laptop-details {
+  flex: 1;
+}
+
+.laptop-title {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.laptop-description {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 10px;
+}
+
+.rating-price {
+  margin-bottom: 10px;
+}
+
+.rating-price .rating {
+  background: #ffea00;
+  color: #444;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Cart / Quantity Buttons */
+.cart-quantity-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-quantity-wrapper button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #36aab9;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cart-quantity-wrapper button:hover {
+  background: #14565E;
+}
+
+.cart-quantity-wrapper span {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 25px;
+  text-align: center;
+}
+
+/* Remove / Add / Wishlist / Buy Buttons */
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.btn.cart.add {
+  background: #28a745;
+  color: white;
+}
+
+.btn.cart.add:hover {
+  background: #218838;
+}
+
+.btn.remove {
+  background: #ff4d4d;
+  color: white;
+}
+
+.btn.remove:hover {
+  background: #cc0000;
+}
+
+.btn.wishlist.add {
+  background: #ffc107;
+  color: #333;
+}
+
+.btn.wishlist.remove {
+  background: #fd7e14;
+  color: white;
+}
+
+.btn.buy {
+  background: #007bff;
+  color: white;
+}
+
+.btn.buy:hover {
+  background: #0056b3;
+}

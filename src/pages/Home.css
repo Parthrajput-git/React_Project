@@ -1,0 +1,230 @@
+/* General Layout */
+/* General Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+ 
+  color: white;
+  padding: 5rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+
+  /* gradient text */
+    
+      background: linear-gradient(90deg, #facc15, #f97316, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* extra styling */
+  /* letter-spacing: 2px; */
+  /* text-transform: uppercase; */
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+
+background: linear-gradient(135deg, #237B87, #42C2FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+}
+.hero-description {
+  font-size: 1.2rem;
+  color: #64748b; /* soft slate text */
+  margin: 2rem 0;
+  line-height: 1.8;
+  max-width: 600px;
+
+  /* styling effects */
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #1578fa; /* yellow accent line */
+  border-radius: 0.75rem;
+
+  /* subtle shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero-image-container {
+  display: none;
+}
+.hero-image {
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-image-container {
+    display: block;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #237B87, #42C2FF);
+  color: #111827;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #36aab9, #14565E);
+  color: white;
+}
+.btn-outline {
+  border: 2px solid white;
+  color: black;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+   background: linear-gradient(135deg, #36aab9, #14565E);
+}
+
+/* Trust Section */
+.trust-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.trust-card {
+  text-align: center;
+}
+.trust-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.blue-bg { background-color: #bfdbfe; }
+.green-bg { background-color: #bbf7d0; }
+.purple-bg { background-color: #e9d5ff; }
+.orange-bg { background-color: #fed7aa; }
+
+/* Categories Section */
+.categories-section {
+  padding: 4rem 0;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.category-card {
+  display: block;
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.category-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Featured Products */
+.featured-section {
+  padding: 4rem 0;
+  background: #f9fafb;
+}
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-all-link {
+  text-decoration: none;
+  color: #237B87;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.product-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #36aab9, #14565E);
+  color: white;
+  padding: 4rem 0;
+}
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.btn-light {
+  background: white;
+  color: #14565E;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}

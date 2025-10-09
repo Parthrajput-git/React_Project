@@ -1,0 +1,133 @@
+/* LaptopDetail.css */
+
+.laptop-detail-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.laptop-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.laptop-header img.laptop-image {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.laptop-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.laptop-header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Section Titles */
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-left: 4px solid #007bff;
+  padding-left: 0.5rem;
+}
+
+/* Products Grid */
+.product-grid,
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-grid {
+  justify-content: space-between;
+}
+
+.product-row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+}
+
+/* Individual Product Card */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 180px;
+  min-width: 180px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.product-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Scrollbar for horizontal scroll */
+.product-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.product-row::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 3px;
+}
+
+.product-row::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .laptop-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .laptop-header img.laptop-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card {
+    width: 140px;
+    min-width: 140px; /* ✅ fixed error */
+  }
+}

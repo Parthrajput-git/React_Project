@@ -1,0 +1,220 @@
+/* Root colors */
+:root {
+  --bg: #f0f2f5;
+  --primary: #095bb0;
+  --secondary: #7fabb6;
+  --text: #333;
+  --input-border: #ccc;
+  --input-focus: rgba(11, 116, 222, 0.3);
+  --btn-hover: #073e8a;
+}
+
+/* Container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #36aab9, #14565E); */
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles */
+.login-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2490a6ff;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+color: #2490a6ff;
+}
+
+/* Form */
+.login-form input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  background-color: #fafafa;
+}
+
+.login-form input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 5px var(--input-focus);
+}
+
+/* Password wrapper */
+.password-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.password-wrapper input {
+  width: 85%;
+  padding-right: 45px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 22px;
+}
+
+
+/* Buttons */
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background: var(--btn-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 91, 176, 0.3);
+}
+
+/* Forgot password */
+.forgot-text {
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+.forgot-form {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.forgot-form input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.forgot-form button {
+  padding: 0.6rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.forgot-msg {
+  font-size: 0.85rem;
+  color: green;
+  margin-top: 0.2rem;
+}
+
+/* Footer */
+.login-footer {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.login-footer a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+  color: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-card {
+    padding: 1.8rem 2rem;
+  }
+
+  .login-title {
+    font-size: 1.6rem;
+  }
+
+  .toggle-password {
+    font-size: 20px;
+  }
+
+  .login-form button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+}
+
+/* Extra small screens - 250px */
+@media (max-width: 250px) {
+  .login-card {
+    padding: 1rem 1rem;
+    width: 95%;
+  }
+
+  .login-title {
+    font-size: 1.4rem;
+  }
+
+  .login-form input {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .toggle-password {
+    font-size: 18px;
+  }
+
+  .login-form button {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .forgot-text {
+    font-size: 0.8rem;
+  }
+
+  .login-footer {
+    font-size: 0.8rem;
+  }
+}

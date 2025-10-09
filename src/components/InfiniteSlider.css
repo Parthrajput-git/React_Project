@@ -1,0 +1,116 @@
+/* Slider Title */
+.slider-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Container for the slider */
+.slider-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Each slide wrapper */
+.slide-wrapper {
+  padding: 8px;
+  display: flex; /* Ensure cards stretch equally */
+}
+
+/* Card Styling */
+.laptop-card {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  /* Equal height logic */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.laptop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+/* Product Title */
+.laptop-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 8px;
+  min-height: 40px;
+  line-height: 1.2;
+}
+
+/* Rating Section */
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+
+.stars {
+  color: #f1c40f;
+  font-size: 1rem;
+}
+
+/* Price Section */
+.price-section {
+  margin-bottom: 12px;
+  min-height: 24px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.price-currency {
+  font-size: 0.9rem;
+  color: #555;
+  margin-right: 4px;
+}
+
+/* Button */
+.details-btn {
+  padding: 8px 14px;
+  background: #3498db;
+  color: white;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+
+  /* Push to bottom */
+  margin-top: auto;
+}
+
+.details-btn:hover {
+  background: #2980b9;
+}

@@ -1,0 +1,130 @@
+.cart-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  font-family: "Arial", sans-serif;
+}
+
+.cart-header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cart-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  padding: 40px 0;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+}
+
+.cart-item img {
+  width: 120px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f4f4f4;
+  padding: 5px;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.cart-details h3 {
+  font-size: 20px;
+  margin: 0 0 8px;
+  color: #222;
+}
+
+.cart-details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.cart-details span {
+  display: inline-block;
+  background: #ffea00;
+  color: #444;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.btn.remove {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn.remove:hover {
+  background: #cc0000;
+}
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.cart-quantity button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #36aab9;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cart-quantity button:hover {
+  background: #14565E;
+}
+
+.cart-quantity span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  min-width: 25px;
+  text-align: center;
+}
