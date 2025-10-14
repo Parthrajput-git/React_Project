@@ -41,7 +41,7 @@ const Dashboard = ({ user }) => {
           "#22c55e",
           "#ef4444",
         ],
-        borderWidth: 1
+        borderWidth: 1,
       },
     ],
   };
@@ -87,6 +87,7 @@ const Dashboard = ({ user }) => {
 };
 
 export default Dashboard;
+
 
 
 
