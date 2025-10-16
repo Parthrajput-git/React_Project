@@ -1,6 +1,6 @@
 src/pages/Login.js
 import React, { useState } from "react";
-import { FaUser, FaLock } from "react-icons/fa";
+// import { FaUser, FaLock } from "react-icons/fa";
 
 // function Login() {
 //   const [email, setEmail] = useState("");
@@ -51,6 +51,7 @@ import { FaUser, FaLock } from "react-icons/fa";
 // }
 
 // export default Login;
+
 
 
 
