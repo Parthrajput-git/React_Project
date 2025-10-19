@@ -1,5 +1,5 @@
 /* Slider Title */
-.slider-title {
+/* .slider-title { */
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 25px;
@@ -114,3 +114,4 @@
 .details-btn:hover {
   background: #2980b9;
 }
+
