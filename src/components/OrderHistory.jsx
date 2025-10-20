@@ -6,7 +6,7 @@
 // const OrderHistory = () => {
   // const orders = useSelector((state) => state.user.data.orders);
 
-  const getStatusColor = (status) => {
+  // const getStatusColor = (status) => {
     switch (status.toLowerCase()) {
       case "delivered":
         return "success";
