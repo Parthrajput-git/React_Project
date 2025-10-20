@@ -3,7 +3,7 @@
 // import {  Calendar, DollarSign, Eye } from "lucide-react";
 // import Pro from "../pages/Profile.module.css";
 
-// const OrderHistory = () => {
+const OrderHistory = () => {
   const orders = useSelector((state) => state.user.data.orders);
 
   const getStatusColor = (status) => {
