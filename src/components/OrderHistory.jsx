@@ -4,7 +4,7 @@
 // import Pro from "../pages/Profile.module.css";
 
 // const OrderHistory = () => {
-  const orders = useSelector((state) => state.user.data.orders);
+  // const orders = useSelector((state) => state.user.data.orders);
 
   const getStatusColor = (status) => {
     switch (status.toLowerCase()) {
