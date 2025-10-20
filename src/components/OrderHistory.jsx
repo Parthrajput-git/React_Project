@@ -1,7 +1,7 @@
 // import React from "react";
 // import { useSelector } from "react-redux";
 // import {  Calendar, DollarSign, Eye } from "lucide-react";
-import Pro from "../pages/Profile.module.css";
+// import Pro from "../pages/Profile.module.css";
 
 const OrderHistory = () => {
   const orders = useSelector((state) => state.user.data.orders);
