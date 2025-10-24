@@ -3,7 +3,7 @@
 // const initialUserData = {
   // userId: 1,
   // name: "Vineet Suman",
-  email: "raghavendra@example.com",
+  // email: "raghavendra@example.com",
   phone: "00000 0000",
   profileImage:
     "",
