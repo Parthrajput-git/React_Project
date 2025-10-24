@@ -4,7 +4,7 @@
   // userId: 1,
   // name: "Vineet Suman",
   // email: "raghavendra@example.com",
-  phone: "00000 0000",
+  // phone: "00000 0000",
   profileImage:
     "",
   dateOfBirth: "2000-01-01",
