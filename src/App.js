@@ -14,7 +14,7 @@ import Profile from "./pages/Profile.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
 import SingleLaptopInfo from "./pages/SingleLaptopInfo.jsx";
 import MyCart from "./pages/MyCart.jsx"
-// import { useState } from "react";
+import { useState } from "react";
 // import { ToastContainer } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 
