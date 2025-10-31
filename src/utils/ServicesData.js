@@ -1,6 +1,6 @@
 // export const companyOffers = [
     {
-      // company: "HP",
+      company: "HP",
       image : 'https://pixy.org/src/146/thumbs350/1460599.jpg',
       offers: [
         { text: "Free delivery on all laptops above ₹50,000", badge: "Free Delivery" },
@@ -81,6 +81,7 @@
     },
 
   ];
+
 
 
 
