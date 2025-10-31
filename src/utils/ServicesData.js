@@ -1,4 +1,4 @@
-// export const companyOffers = [
+export const companyOffers = [
     {
       company: "HP",
       image : 'https://pixy.org/src/146/thumbs350/1460599.jpg',
@@ -81,6 +81,7 @@
     },
 
   ];
+
 
 
 
