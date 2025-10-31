@@ -3,7 +3,7 @@
       // company: "HP",
       // image : 'https://pixy.org/src/146/thumbs350/1460599.jpg',
       offers: [
-        // { text: "Free delivery on all laptops above ₹50,000", badge: "Free Delivery" },
+        { text: "Free delivery on all laptops above ₹50,000", badge: "Free Delivery" },
         { text: "1-year standard warranty + optional extended warranty" },
         { text: "Special student discounts available", badge: "Student Discount" },
       
@@ -81,6 +81,7 @@
     },
 
   ];
+
 
 
 
