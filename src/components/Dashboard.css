@@ -1,7 +1,7 @@
-.dashboard {
+/* .dashboard {
   display: flex;
   min-height: 100vh;
-}
+} */
 
 /* Sidebar */
 .sidebar {
@@ -213,3 +213,4 @@
   min-width: 250px;
   max-width: 400px;
 }
+
