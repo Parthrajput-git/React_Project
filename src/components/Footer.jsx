@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-container">
 
         <div className="footer-section">
-          <h2>Laptop_DEKHO</h2>
+          {/* <h2>Laptop_DEKHO</h2> */}
           <p>
             Your one-stop shop for best laptops online. Stay connected with the latest technology.
           </p>
