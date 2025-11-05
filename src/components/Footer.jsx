@@ -1,6 +1,6 @@
 
 import "./Footer.css";
-// import cycle from "../assets/cycle-Footer-img-unscreen.gif"
+import cycle from "../assets/cycle-Footer-img-unscreen.gif"
 // import car from "../assets/car2.gif"
 function Footer() {
   return (
