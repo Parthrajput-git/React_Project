@@ -7,7 +7,7 @@ const initialUserData = {
   phone: "00000 0000",
   profileImage:
     "",
-  // dateOfBirth: "2000-01-01",
+  dateOfBirth: "2000-01-01",
   gender: "Male",
   joinedDate: "2023-08-21",
   addresses: [
