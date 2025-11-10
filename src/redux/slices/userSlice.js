@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialUserData = {
+// const initialUserData = {
   userId: 1,
   // name: "Vineet Suman",
   email: "raghavendra@example.com",
