@@ -1,7 +1,7 @@
 /* CategoryList.css. */
 .category-container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   padding: 40px;
   background: #f5f6fa;
