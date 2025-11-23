@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   padding: 40px;
-  background: #f5f6fa;
+  /* background: #f5f6fa; */
 }
 
 .category-wrapper {
