@@ -1,5 +1,5 @@
 import React from "react";
-// import "./About.css";
+import "./About.css";
 import TeamMember from "../components/TeamMember";
 import WhatWeOffer from "../components/WhatWeOffer"
 
